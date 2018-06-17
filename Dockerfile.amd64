@@ -1,9 +1,9 @@
 FROM node:8.6.0-alpine 
-MAINTAINER Stefan Biermann 
+MAINTAINER Nicolas Chambers 
 
 ENV TZ 'Europe/Berlin'
 
-ADD alexa-fhem-0.3.5.tgz /
+ADD alexa-fhem-0.4.4.tgz /
 
 RUN mv package alexa-fhem && cd alexa-fhem &&\
 	npm install && mkdir ~/.alexa && mkdir /config &&\
